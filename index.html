@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+
+    <div id="contenedor" >
+        <section >
+            <h1>Calculadora de Propinas</h1>
+            <hr>
+            <div class="cuadro1">
+                ingrese su valor:
+                <br>
+                <input value="" type="number" id="num1">
+                <br>
+                Propinas
+                <br>
+                <input value="" type="number" id="num2">
+                <br>
+                <br>
+                <button id="btn" class="btn" onclick="validacion ()">Calcular</button>
+            </div>
+                
+            
+        </section>
+
+        <section id="limpiar" class="limpiar">
+            <h2 id="titleresult" class="tittleresult">Resumen</h2>
+            <h2 value="" class="valor1">Valor Inicial <br><span id="valor1"></span></h2>
+            <h2 value="" class="valor2">Valor Propina <br><span id="valor2"></span></h2>
+            <h2 value="" class="totalapagar">Total a Pagar  <br><span id="totalapagar"></span></h2>
+            
+            <button id="caja" onclick="esconder ()" >limpiar</button>
+        </section>
+        
+
+    </div>
+
+
+    
+
+    <script src="./scripts/scripts.js"></script>
+</body>
+
+</html>

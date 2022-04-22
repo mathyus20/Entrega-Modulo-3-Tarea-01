@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+#contenedor{
+   font-family: 'Lobster', cursive;
+   width: 1000px;
+   height: 700px;
+   background: silver;
+   margin: 30px auto; 
+   text-align: center;
+   border: 10px solid;
+   border-color: #ec0a0a;
+}
+
+button {
+   color: #318aac !important;
+   font-size: 20px;
+   font-weight: 500;
+   padding: 0.5em 1.2em;
+   background: rgba(0,0,0,0);
+   border: 2px solid;
+   border-color: #318aac;
+   transition: all 1s ease;
+   position: relative;
+ }
+ button:hover {
+   background: #318aac;
+   color: #fff !important;
+ }
+
+input{
+   color: #318aac !important;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0.5em 1.2em;
+  background: rgba(0,0,0,0);
+  border: 2px solid;
+  border-color: #318aac;
+}
+
+#limpiar{
+   background-color: blanchedalmond;
+   border-radius: 50%;
+   transition: all 1s ease;
+   border-color: #318aac;
+
+}
+#valor1{
+   background-color: #00000072;
+   border-color: #ffffff;
+   border: 2px solid;
+}
+#valor2{
+   background-color: #00000072;
+   border-color: #ffffff;
+   border: 2px solid;
+}
+#totalapagar{
+   background-color: #00000072;
+   border-color: #ffffff;
+   border: 2px solid;
+}
+
+.limpiar{
+   display: none ;
+}
+
+.mostrar{
+   visibility: hidden;
+}
+
