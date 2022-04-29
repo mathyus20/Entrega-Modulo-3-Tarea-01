@@ -1,14 +1,14 @@
 const porcentaje = 100 ;
 
-function validacion () {
+const validacion = () => {
 
 
-    let valor = document.getElementById("num1").value;
-    let propina = document.getElementById("num2").value;
-    let valorint = parseInt (valor) ;
-    let valorpro = parseInt (propina) ;
-    let valorpropina = (valorint * valorpro/porcentaje);
-    let totalapagar = (valorpropina + valorpro);
+    const valor = document.getElementById("num1").value;
+    const propina = document.getElementById("num2").value;
+    const valorint = parseInt (valor) ;
+    const valorpro = parseInt (propina) ;
+    const valorpropina = (valorint * valorpro/porcentaje);
+    const totalapagar = (valorpropina + valorint );
     if ( valor === "" ||propina === ""){
         alert("por favor ingrese los valores")
         document.getElementById("limpiar").style.display = "none" ;
@@ -16,18 +16,15 @@ function validacion () {
     } 
     else {
         document.getElementById('valor1').innerHTML = valor ;
-        document.getElementById('valor2').innerHTML = valorpropina ;
+        document.querySelector('span.valor-2').innerHTML = valorpropina ;
         document.getElementById('totalapagar').innerHTML = totalapagar ;
         //document.getElementById("limpiar").style.display = "block"
         document.getElementById("limpiar").classList.add("mostrar");
     }
 }
 //aqui se supone que debe
-function esconder(){
+const esconder = () =>{
     document.getElementById("limpiar").classList.remove("mostrar");
-}
-document.querySelector("caja").onclick = function (){
-    esconder();
 }
 
 
