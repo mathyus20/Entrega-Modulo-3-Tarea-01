@@ -18,12 +18,13 @@ function validacion () {
         document.getElementById('valor1').innerHTML = valor ;
         document.getElementById('valor2').innerHTML = valorpropina ;
         document.getElementById('totalapagar').innerHTML = totalapagar ;
-        document.getElementById("limpiar").style.display = "block"
+        //document.getElementById("limpiar").style.display = "block"
+        document.getElementById("limpiar").classList.add("mostrar");
     }
 }
 //aqui se supone que debe
 function esconder(){
-    document.getElementById("limpiar").classList.add("mostrar");
+    document.getElementById("limpiar").classList.remove("mostrar");
 }
 document.getElementById("caja").onclick = function (){
     esconder();

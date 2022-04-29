@@ -65,6 +65,7 @@ input{
 }
 
 .mostrar{
-   visibility: hidden;
+   display: block;
+   
 }
 
