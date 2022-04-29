@@ -26,7 +26,7 @@ function validacion () {
 function esconder(){
     document.getElementById("limpiar").classList.remove("mostrar");
 }
-document.getElementById("caja").onclick = function (){
+document.querySelector("caja").onclick = function (){
     esconder();
 }
 
